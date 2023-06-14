@@ -1,0 +1,65 @@
+@use 'sass:math';
+@use '../abstracts/variables' as var;
+@use '../abstracts/functions' as func;
+
+body {
+	--bs-body-font-family: #{var.$font-family-primary};
+	--bs-body-font-size: #{func.em(16)};
+	--bs-body-font-weight: #{var.$font-weight-400};
+	--bs-body-line-height: #{math.div(23, 16)};
+	--bs-body-color: #{var.$color-soft-blue};
+	--bs-body-text-align: left;
+	--bs-body-bg: #{var.$color-dark-blue-1};
+}
+
+.container-fluid {
+	--bs-gutter-x: 3em;
+}
+
+.card-header:first-child {
+	--bs-card-inner-border-radius: 0;
+}
+
+.card-header {
+	--bs-card-cap-padding-x: 0;
+	--bs-card-cap-padding-y: 0;
+	margin-bottom: func.em(24);
+}
+
+.card-body {
+	--bs-card-spacer-x: 0;
+	--bs-card-spacer-y: 0;
+}
+
+.card-title {
+	--bs-card-title-spacer-y: #{func.em(12, 22)};
+}
+
+[class^='link-'] {
+	text-decoration: none;
+}
+
+.link-primary {
+	--bs-primary-rgb: #{var.$color-white-rgb};
+}
+
+.link-primary:hover,
+.link-primary:focus {
+	color: #{var.$color-cyan} !important;
+}
+
+.card-footer:last-child {
+	--bs-card-inner-border-radius: 0;
+	--bs-card-cap-padding-x: 0;
+	--bs-card-cap-padding-y: #{func.em(16)};
+	--bs-card-cap-bg: transparent;
+	--bs-card-border-width: 1px;
+	--bs-card-border-color: #{var.$color-dark-blue-3};
+	padding-bottom: 0;
+}
+
+@media (min-width: 48em) {
+	.card-title {
+		--bs-card-title-spacer-y: #{func.em(16, 22)};
+	}
+}
