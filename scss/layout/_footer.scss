@@ -1,7 +1,7 @@
 @use '../abstracts/mixins' as mix;
 
 footer,
-footer .container {
+footer .container-fluid {
 	@include mix.flexbox;
 	@include mix.flex-direction(column);
 }
@@ -11,5 +11,4 @@ footer {
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	padding: 1em 0;
 }

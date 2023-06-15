@@ -11859,13 +11859,13 @@ textarea.form-control-lg {
   }
 }
 body {
+  --bs-body-bg: hsl(217, 54%, 11%);
   --bs-body-font-family: Outfit, sans-serif;
   --bs-body-font-size: 1em;
   --bs-body-font-weight: 400;
-  --bs-body-line-height: 1.4375;
   --bs-body-color: hsl(215, 51%, 70%);
+  --bs-body-line-height: 1.4375;
   --bs-body-text-align: left;
-  --bs-body-bg: hsl(217, 54%, 11%);
 }
 
 .container-fluid {
@@ -11891,10 +11891,6 @@ body {
   --bs-card-title-spacer-y: 0.5454545455em;
 }
 
-[class^=link-] {
-  text-decoration: none;
-}
-
 .link-primary {
   --bs-primary-rgb: 255, 255, 255;
 }
@@ -11905,12 +11901,12 @@ body {
 }
 
 .card-footer:last-child {
-  --bs-card-inner-border-radius: 0;
+  --bs-card-cap-bg: transparent;
   --bs-card-cap-padding-x: 0;
   --bs-card-cap-padding-y: 1em;
-  --bs-card-cap-bg: transparent;
   --bs-card-border-width: 1px;
   --bs-card-border-color: hsl(215, 32%, 27%);
+  --bs-card-inner-border-radius: 0;
   padding-bottom: 0;
 }
 
@@ -11983,6 +11979,10 @@ picture {
   max-width: 100%;
 }
 
+[class^=link-] {
+  text-decoration: none;
+}
+
 .link {
   color: hsl(0, 0%, 100%);
 }
@@ -12007,23 +12007,6 @@ i[class^=icon-] {
   width: 1em;
   height: 1em;
   background-image: url("../images/icons/clock.svg");
-}
-
-.card,
-.card-header,
-.card-body {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -moz-box-direction: normal;
-  -moz-box-orient: vertical;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
 }
 
 .card {
@@ -12152,7 +12135,7 @@ main > .container-fluid {
 }
 
 footer,
-footer .container {
+footer .container-fluid {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -12172,7 +12155,6 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  padding: 1em 0;
 }
 
 /*# sourceMappingURL=main.css.map */

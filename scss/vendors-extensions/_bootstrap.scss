@@ -3,13 +3,13 @@
 @use '../abstracts/functions' as func;
 
 body {
+	--bs-body-bg: #{var.$color-dark-blue-1};
 	--bs-body-font-family: #{var.$font-family-primary};
 	--bs-body-font-size: #{func.em(16)};
 	--bs-body-font-weight: #{var.$font-weight-400};
-	--bs-body-line-height: #{math.div(23, 16)};
 	--bs-body-color: #{var.$color-soft-blue};
+	--bs-body-line-height: #{math.div(23, 16)};
 	--bs-body-text-align: left;
-	--bs-body-bg: #{var.$color-dark-blue-1};
 }
 
 .container-fluid {
@@ -45,12 +45,12 @@ body {
 }
 
 .card-footer:last-child {
-	--bs-card-inner-border-radius: 0;
+	--bs-card-cap-bg: transparent;
 	--bs-card-cap-padding-x: 0;
 	--bs-card-cap-padding-y: #{func.em(16)};
-	--bs-card-cap-bg: transparent;
 	--bs-card-border-width: 1px;
 	--bs-card-border-color: #{var.$color-dark-blue-3};
+	--bs-card-inner-border-radius: 0;
 	padding-bottom: 0;
 }
 

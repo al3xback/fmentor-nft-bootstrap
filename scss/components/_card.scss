@@ -2,13 +2,6 @@
 @use '../abstracts/functions' as func;
 @use '../abstracts/mixins' as mix;
 
-.card,
-.card-header,
-.card-body {
-	@include mix.flexbox;
-	@include mix.flex-direction(column);
-}
-
 .card {
 	width: 100%;
 	max-width: func.em(350);
