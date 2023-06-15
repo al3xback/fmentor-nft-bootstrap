@@ -16,6 +16,13 @@ body {
 	--bs-gutter-x: 3em;
 }
 
+.card {
+	--bs-card-bg: #{var.$color-dark-blue-2};
+	--bs-card-border-width: 0;
+	--bs-card-border-color: transparent;
+	--bs-card-border-radius: 15px;
+}
+
 .card-header:first-child {
 	--bs-card-inner-border-radius: 0;
 }

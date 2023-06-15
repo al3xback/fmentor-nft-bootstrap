@@ -11872,6 +11872,13 @@ body {
   --bs-gutter-x: 3em;
 }
 
+.card {
+  --bs-card-bg: hsl(216, 50%, 16%);
+  --bs-card-border-width: 0;
+  --bs-card-border-color: transparent;
+  --bs-card-border-radius: 15px;
+}
+
 .card-header:first-child {
   --bs-card-inner-border-radius: 0;
 }
@@ -12014,10 +12021,6 @@ i[class^=icon-] {
   max-width: 21.875em;
   padding: 1.5em;
   margin: 2.5em 0 3.75em;
-  background-color: hsl(216, 50%, 16%);
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
   -webkit-box-shadow: 0 1.5625em 3.125em rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 1.5625em 3.125em rgba(0, 0, 0, 0.1);
   box-shadow: 0 1.5625em 3.125em rgba(0, 0, 0, 0.1);
