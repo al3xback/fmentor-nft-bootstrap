@@ -11896,6 +11896,7 @@ body {
 
 .card-title {
   --bs-card-title-spacer-y: 0.5454545455em;
+  --bs-card-title-color: hsl(215, 51%, 70%);
 }
 
 .link-primary {
@@ -11978,6 +11979,7 @@ ul,
 ol {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 img,

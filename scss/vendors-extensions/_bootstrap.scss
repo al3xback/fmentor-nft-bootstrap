@@ -40,6 +40,7 @@ body {
 
 .card-title {
 	--bs-card-title-spacer-y: #{func.em(12, 22)};
+	--bs-card-title-color: #{var.$color-soft-blue};
 }
 
 .link-primary {
