@@ -11990,14 +11990,6 @@ picture {
   text-decoration: none;
 }
 
-.link {
-  color: hsl(0, 0%, 100%);
-}
-
-.link:hover {
-  color: hsl(178, 100%, 50%);
-}
-
 i[class^=icon-] {
   background-repeat: no-repeat;
   background-position: center;
