@@ -20,6 +20,10 @@ picture {
 	max-width: 100%;
 }
 
+[class^='link-'] {
+	text-decoration: none;
+}
+
 .link {
 	color: var.$color-white;
 }

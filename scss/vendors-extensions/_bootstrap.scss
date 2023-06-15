@@ -35,10 +35,6 @@ body {
 	--bs-card-title-spacer-y: #{func.em(12, 22)};
 }
 
-[class^='link-'] {
-	text-decoration: none;
-}
-
 .link-primary {
 	--bs-primary-rgb: #{var.$color-white-rgb};
 }
