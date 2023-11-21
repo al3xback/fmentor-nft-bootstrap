@@ -7,12 +7,12 @@
 	max-width: func.em(350);
 	padding: func.em(24);
 	margin: func.em(40) 0 func.em(60);
-	@include mix.box-shadow(0 func.em(25) func.em(50) rgba(0, 0, 0, 0.1));
+	box-shadow: 0 func.em(25) func.em(50) rgba(0, 0, 0, 0.1);
 }
 
 .card-image {
 	background-color: var.$color-soft-blue;
-	@include mix.border-radius(0.5em);
+	border-radius: 0.5em;
 	cursor: pointer;
 }
 
@@ -25,8 +25,8 @@
 	background-image: url('../images/icons/view.svg');
 	background-repeat: no-repeat;
 	background-position: center;
-	@include mix.border-radius(inherit);
-	@include mix.transition(opacity 0.3s);
+	border-radius: inherit;
+	transition: opacity 0.3s;
 	opacity: 0;
 }
 
@@ -36,7 +36,7 @@
 
 .card-image img {
 	object-fit: cover;
-	@include mix.border-radius(inherit);
+	border-radius: inherit;
 }
 
 .card-text {
