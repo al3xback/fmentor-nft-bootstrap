@@ -38,7 +38,7 @@
 }
 
 .card-text {
-	margin-bottom: func.em(16, 18);
+	margin-bottom: func.em(18);
 }
 
 .card-list-item {
@@ -74,6 +74,7 @@
 @media (min-width: 48em) {
 	.card-text {
 		margin-bottom: func.em(24, 18);
+		font-size: func.em(18);
 	}
 
 	.card-list-item,
